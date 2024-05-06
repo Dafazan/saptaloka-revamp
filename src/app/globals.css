@@ -15,17 +15,22 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.body {
+  scroll-behavior: smooth;
 }
-
+.durat {
+  transition-duration: 100ms;
+}
+.light-text {
+  color: #2abdfb;
+}
+.hover-text {
+  color: #00ffff;
+}
+.light-bg {
+  background: #2abdfb;
+  background-color: #2abdfb;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
