@@ -1,6 +1,11 @@
 import ButtonA from "@/components/button";
 import Image from "next/image";
 import Changecolor from "./changecolor";
+import PortofolioPrev from "@/components/pages/PortofolioPrev";
+import ClientsPrev from "@/components/pages/ClientsPrev";
+import CoreValue from "@/components/pages/CoreValue";
+import ContactMail from "@/components/pages/ContactMail";
+import NewsPrev from "@/components/pages/NewsPrev";
 
 export default function Home() {
   return (
@@ -32,7 +37,7 @@ export default function Home() {
                     </h1>
                   </div>
                   <div className="text-[18px] uppercase pt-6">
-                    <ButtonA />
+                    <ButtonA text={"MORE ABOUT US"} color="#2ABDFB" />
                   </div>
                 </div>
               </div>
@@ -69,6 +74,11 @@ export default function Home() {
             <img src="imgt2.svg" alt="" />
             <img src="sldfrm.svg" alt="" />
           </div>
+          <PortofolioPrev />
+          <ClientsPrev />
+          <CoreValue />
+          <ContactMail />
+          <NewsPrev />
         </div>
         <div className="h-screen"></div>
         <div className="h-screen"></div>
