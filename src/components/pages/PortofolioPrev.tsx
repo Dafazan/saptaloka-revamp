@@ -9,10 +9,25 @@ function PortofolioPrev() {
           PROJECTS WE&rsquo;VE DONE
         </h3>
       </div>
-      <div className="bg-red-900 flex w-full gap-10 px-[4%]">
-        <PortofolioCard />
-        <div className="bg-blue-800 w-[290px] h-[400px]">A</div>
-        <div className="bg-blue-800 w-[290px] h-[400px]">A</div>
+      <div className="flex w-full gap-10 px-[4%]">
+        <PortofolioCard
+          title="PT TELKOM INFRA SPARE MANAGEMENT"
+          desc="An inventory application for regulating entry and exit of goods
+              and cables, also manages inventory in the warehouse at PT Telkom
+              Infra."
+        />
+        <PortofolioCard
+          title="PT TELKOM INFRA SPARE MANAGEMENT"
+          desc="An inventory application for regulating entry and exit of goods
+              and cables, also manages inventory in the warehouse at PT Telkom
+              Infra."
+        />
+        <PortofolioCard
+          title="PT TELKOM INFRA SPARE MANAGEMENT"
+          desc="An inventory application for regulating entry and exit of goods
+              and cables, also manages inventory in the warehouse at PT Telkom
+              Infra."
+        />
       </div>
     </>
   );

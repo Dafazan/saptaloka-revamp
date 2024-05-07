@@ -2,10 +2,11 @@
 import React, { useState } from "react";
 import ButtonA from "../button";
 
-function PortofolioCard() {
+function PortofolioCard({ title, desc }: { title: string; desc: string }) {
   const [ishover, setIshover] = useState(false);
   return (
-    <div
+    <a
+      href="/#"
       onMouseEnter={() => setIshover(true)}
       onMouseLeave={() => setIshover(false)}
       className="w-[285px] h-[400px] relative overflow-hidden"
@@ -19,16 +20,10 @@ function PortofolioCard() {
           ishover == true ? "bg-[#2ABDFB]" : "translate-y-[270px]"
         } p-4 absolute `}
       >
-        <h1 className="text-[22px] text-[#F0FDFF] font-bold">
-          PT TELKOM INFRA SPARE MANAGEMENT
-        </h1>
+        <h1 className="text-[22px] text-[#F0FDFF] font-bold">{title}</h1>
         {ishover == true ? (
           <>
-            <p className="pt-2 text-white text-[14px]">
-              An inventory application for regulating entry and exit of goods
-              and cables, also manages inventory in the warehouse at PT Telkom
-              Infra.
-            </p>
+            <p className="pt-2 text-white text-[14px]">{desc}</p>
           </>
         ) : (
           <></>
@@ -39,7 +34,7 @@ function PortofolioCard() {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 
