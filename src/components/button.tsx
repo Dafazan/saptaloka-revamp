@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-function ButtonA() {
+function ButtonA({ text, color }: { text: string; color: string }) {
   const [ishover, setIshover] = useState(false);
   return (
     <button
@@ -12,9 +12,9 @@ function ButtonA() {
       <p
         className={`${
           ishover == true ? "pe-1" : "pe-2"
-        } font-mediun duration-100 light-text`}
+        } font-mediun duration-100 text-[${color}]`}
       >
-        MORE ABOUT US
+        {text}
       </p>
       <div className={`${ishover == true ? "scale-105" : ""} duration-100`}>
         <svg
@@ -28,7 +28,7 @@ function ButtonA() {
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M0 32.7699L8.76057 15.982L0.420617 0L26.2799 16.2528L0 32.7699Z"
-            fill="#2ABDFB"
+            fill={color}
           />
         </svg>
       </div>
