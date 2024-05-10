@@ -47,16 +47,3 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
-
-/* Define custom text outline class */
-.outline-text {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-.font-outline-2 {
-  -webkit-text-stroke: 2px black;
-}
-.font-outline-4 {
-  -webkit-text-stroke: 4px black;
-}
