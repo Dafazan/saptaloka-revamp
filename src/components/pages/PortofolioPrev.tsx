@@ -5,7 +5,7 @@ function PortofolioPrev() {
   return (
     <>
       <div className="h-24 w-full flex items-center justify-center">
-        <h3 className="text-[28px] font-bold text-[#00103E]">
+        <h3 className="text-[28px] font-bold text-[#D8F3FF]">
           PROJECTS WE&rsquo;VE DONE
         </h3>
       </div>

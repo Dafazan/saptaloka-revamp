@@ -67,15 +67,12 @@ export default function Home() {
         </div>
         <div id="services" className="flex flex-col">
           <div className="h-24 w-full flex items-center justify-center">
-            <h3 className="text-[28px] font-bold text-[#00103E]">
+            <h3 className="text-[28px] font-bold text-[#D8F3FF]">
               OUR SERVICES
             </h3>
           </div>
           <div className="w-full"></div>
-          <div className="flex flex-col gap-24">
-            <img src="imgt2.svg" alt="" />
-            <img src="sldfrm.svg" alt="" />
-          </div>
+          <div className="flex flex-col gap-24"></div>
           <PortofolioPrev />
           <ClientsPrev />
           <CoreValue />

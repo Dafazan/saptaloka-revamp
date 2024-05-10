@@ -22,10 +22,9 @@ function Changecolor({ children }: any) {
   return (
     <>
       <div
-        className={`w-full bg-repeat-y  ${
+        className={`w-full bg-[#000D32] ${
           scrollLocation >= 100 ? "" : "bg-black"
         }`}
-        style={{ backgroundImage: "url(bg.png)" }}
       >
         <p className="fixed z-50 bg-white">{scrollLocation}</p>
         {children}
