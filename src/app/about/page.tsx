@@ -65,8 +65,8 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="h-screen w-full relative overflow-hidden bg-[#000D32] px-[62px] py-[75px]">
-                <div className="w-full pb-[75px]">
+            <div className="h-screen w-full relative overflow-hidden bg-[#000D32] px-[62px] py-[65px]">
+                <div className="w-full pb-[45px]">
                     <h1 className=" text-sky-200 text-3xl font-extrabold">
                         STORY OF PT.SAPTALOKA DIGITAL INDONESIA
                     </h1>
@@ -80,7 +80,7 @@ export default function About() {
                             DIBENTUK PADA TANGGAL 1 JANUARI 2021, YANG SEBELUMNYA BERNAMA BENGKEL CODING.
                         </h2>
 
-                        <h2 className="text-sky-200 text-xl font-bold pt-8">
+                        <h2 className="text-sky-200 text-xl font-bold pt-6">
                             BENGKEL CODING
                         </h2>
                         <h2 className="text-sky-200 text-xl text-justify font-medium">
@@ -88,11 +88,11 @@ export default function About() {
                             BENGKEL CODING TELAH MENYELESAIKAN PROJECT-PROJECT DARI BEBERAPA CLIENT.
                         </h2>
 
-                        <h2 className="text-sky-200 text-xl text-justify font-medium pt-8">
+                        <h2 className="text-sky-200 text-xl text-justify font-medium pt-6">
                             SEIRING BERJALANNYA WAKTU, SEMAKIN BANYAK PROJECT YANG TERSELESAIKAN,
                             BENGKEL CODING MENJADI SEMAKIN BERKEMBANG.
                         </h2>
-                        <h2 className="text-sky-200 text-xl text-justify font-medium pt-8">
+                        <h2 className="text-sky-200 text-xl text-justify font-medium pt-6">
                             AKHIRNYA, PADA JANUARI 2021 BENGKEL CODING MEMUTUSKAN UNTUK MELAKUKAN RE-BRANDING,
                             MENGUBAH NAMANYA MENJADI SAPTALOKA DIGITAL INDONESIA YANG DIIKUTI DENGAN PEMBERKASAN
                             BADAN HUKUM YANG MEMBUATNYA RESMI MENJADI SEBUAH PT YANG TERDAFTAR
