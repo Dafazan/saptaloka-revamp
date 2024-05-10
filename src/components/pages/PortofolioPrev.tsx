@@ -28,6 +28,14 @@ function PortofolioPrev() {
               and cables, also manages inventory in the warehouse at PT Telkom
               Infra."
         />
+        <a
+          href="/portofolio"
+          className="w-[200px] h-[400px] portbtn bg-[#2ABDFB] text-[#F0FDFF] hover:translate-x-3 duration-200 flex flex-col justify-center"
+        >
+          <div className="flex justify-end p-6">
+            <p className="w-[80%] text-end font-medium ">SEE MORE PORTOFOLIO</p>
+          </div>
+        </a>
       </div>
     </>
   );
