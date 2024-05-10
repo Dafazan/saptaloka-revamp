@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div
-          className="w-full h-full bg-repeat-y bg-cover"
-          style={{ backgroundImage: "url(/bg.png)" }}
-        >
-          <div className="w-full h-full absolute">{children}</div>
+        <div className="w-full h-full">
+          <div className="w-full h-full absolute">
+            {children}
+            <div>FOOOOTER</div>
+          </div>
           <Navbar />
         </div>
       </body>

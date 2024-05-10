@@ -17,6 +17,7 @@
 }
 .body {
   scroll-behavior: smooth;
+  background: #000d32;
 }
 .durat {
   transition-duration: 100ms;
@@ -39,4 +40,23 @@
 
 .portbtn {
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.custom-transition {
+  transition-property: justify-content;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Define custom text outline class */
+.outline-text {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.font-outline-2 {
+  -webkit-text-stroke: 2px black;
+}
+.font-outline-4 {
+  -webkit-text-stroke: 4px black;
 }
