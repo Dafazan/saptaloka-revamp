@@ -21,11 +21,7 @@ function Changecolor({ children }: any) {
 
   return (
     <>
-      <div
-        className={`w-full bg-[#000D32] ${
-          scrollLocation >= 100 ? "" : "bg-black"
-        }`}
-      >
+      <div className={`w-full bg-[#000D32] `}>
         <p className="fixed z-50 bg-white">{scrollLocation}</p>
         {children}
       </div>
