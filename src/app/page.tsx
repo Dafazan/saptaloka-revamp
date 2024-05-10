@@ -37,7 +37,9 @@ export default function Home() {
                     </h1>
                   </div>
                   <div className="text-[18px] uppercase pt-6">
-                    <ButtonA text={"MORE ABOUT US"} color="#2ABDFB" />
+                    <a href="/about">
+                      <ButtonA text={"MORE ABOUT US"} color="#2ABDFB" />
+                    </a>
                   </div>
                 </div>
               </div>
