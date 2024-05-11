@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
         <div className="w-full h-full">
           <div className="w-full h-full absolute">
             {children}
-            <div>FOOOOTER</div>
+            <Footer />
           </div>
           <Navbar />
         </div>
