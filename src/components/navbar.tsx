@@ -60,7 +60,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="fixed w-full ">
+      <div className="fixed w-full z-50">
         <div
           className={`absolute w-full px-[4%] flex justify-between items-center py-[25px] duration-200 
       ${scrollLocation >= 100 ? "bg-[#000820]" : "bg-transparent"}
@@ -82,7 +82,7 @@ function Navbar() {
             </div>
             <div>
               <a className="hover:text-[#00ffff] duration-200" href="/#">
-                ABOUT US
+                PORTFOLIO
               </a>
             </div>
             <div
@@ -118,7 +118,7 @@ function Navbar() {
       </div>
       {isSidebar == true ? (
         <>
-          <div className="fixed w-full h-full flex">
+          <div className="fixed w-full h-full flex z-50">
             <div className="w-3/12 bg-black opacity-35"></div>
             <div className="w-9/12 h-screen bg-[#000820] text-[#2ABDFB] tran flex-flex-col">
               <div className="h-24 w-full flex justify-between trans p-10">
