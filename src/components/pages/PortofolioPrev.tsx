@@ -39,7 +39,7 @@ function PortofolioPrev() {
           className="w-[80%] h-[400px] portbtn bg-[#2ABDFB] text-[#F0FDFF] hover:translate-x-3 duration-200 flex flex-col justify-center"
         >
           <div className="flex justify-end p-6">
-            <p className="w-[80%] text-end font-medium ">SEE MORE PORTOFOLIO</p>
+            <p className="w-[80%] text-end font-medium ">SEE MORE PORTFOLIO</p>
           </div>
         </a>
       </div>

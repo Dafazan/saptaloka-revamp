@@ -23,13 +23,24 @@ function NewsCard({
         className=" h-full w-full overflow-hidden"
       >
         <div className="relative w-full min-h-full">
-          <div className="w-full h-full absolute">
-            <img src={image} className="w-full h-full object-cover" alt="" />
+          <div className="w-full h-full absolute overflow-hidden">
+            <img
+              src={image}
+              className={` object-cover duration-300 ${
+                ishover == true ? "w-[115%] h-[115%]" : "w-full h-full"
+              }`}
+              alt=""
+            />
           </div>
+          <div
+            className={`w-full h-full  absolute ${
+              ishover == true ? " bg-black opacity-40" : "bg-transparent"
+            }`}
+          ></div>
           <div
             className={`w-full h-full flex flex-col absolute p-5 duration-300 overflow-hidden ${
               ishover == true
-                ? " bg-[#2ABDFB] justify-between "
+                ? " justify-between "
                 : "bg-transparent justify-end "
             }`}
           >
