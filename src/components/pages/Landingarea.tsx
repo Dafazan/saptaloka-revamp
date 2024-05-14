@@ -47,7 +47,7 @@ function Landingarea() {
               >
                 <path
                   fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                   d="M-6.48499e-05 -2.09815e-06L24.5903 9.14421L48 0.439014L24.1936 27.4308L-6.48499e-05 -2.09815e-06Z"
                   fill="#2ABDFB"
                 />

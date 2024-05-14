@@ -10,9 +10,8 @@ function ButtonA({ text, color }: { text: string; color: string }) {
       className="flex items-center"
     >
       <p
-        className={`${
-          ishover == true ? "pe-1" : "pe-2"
-        } font-mediun duration-100 text-[${color}]`}
+        className={`${ishover == true ? "pe-1" : "pe-2"
+          } font-mediun duration-100 text-[${color}]`}
       >
         {text}
       </p>
@@ -26,7 +25,7 @@ function ButtonA({ text, color }: { text: string; color: string }) {
         >
           <path
             fill-rule="evenodd"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             d="M0 32.7699L8.76057 15.982L0.420617 0L26.2799 16.2528L0 32.7699Z"
             fill={color}
           />

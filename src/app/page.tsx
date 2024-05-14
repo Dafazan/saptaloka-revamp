@@ -19,6 +19,7 @@ export default function Home() {
           <div className="w-full"></div>
           <div className="flex flex-col gap-24"></div>
           <PortofolioPrev />
+          <p className="bg-white">benerin</p>
           <ClientsPrev />
           <CoreValue />
           <ContactMail />
