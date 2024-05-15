@@ -20,6 +20,10 @@
   background: #000d32;
   overflow-x: hidden;
 }
+.bg-primary{
+  background-color: #000D32;
+}
+
 .durat {
   transition-duration: 100ms;
 }
