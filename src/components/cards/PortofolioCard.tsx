@@ -26,9 +26,8 @@ function PortofolioCard({
       </div>
       <div className="w-full h-full absolute bg-black opacity-30"></div>
       <div
-        className={`absolute w-full h-full flex flex-col  p-4 transition-all duration-300 ${
-          ishover == true ? "justify-start bg-[#2ABDFB]" : "justify-end"
-        }`}
+        className={`absolute w-full h-full flex flex-col  p-4 transition-all duration-300 ${ishover == true ? "justify-start bg-[#2ABDFB]" : "justify-end"
+          }`}
       >
         <h1 className="text-[22px] text-[#F0FDFF] font-bold">{title}</h1>
         {ishover == true ? (
@@ -40,9 +39,8 @@ function PortofolioCard({
         )}
       </div>
       <div
-        className={`w-full h-full flex flex-col duration-300 ${
-          ishover == true ? "" : "-translate-x-[270px]"
-        } p-4 absolute `}
+        className={`w-full h-full flex flex-col duration-300 ${ishover == true ? "" : "-translate-x-[270px]"
+          } p-4 absolute `}
       >
         <div className="w-full h-full  flex flex-col justify-end transi">
           <div className="flex justify-end">

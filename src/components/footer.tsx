@@ -6,7 +6,7 @@ import Sldlogo from "./svgs/sldlogo";
 function Footer() {
   return (
     <>
-      <div className="w-screen flex flex-col bg-[#00103E] px-[4%] pt-[2%] gap-3">
+      <div className="w-full flex flex-col bg-[#00103E] px-[4%] pt-[2%] gap-3">
         <div className="flex w-full justify-center">
           <Sldlogo />
         </div>
@@ -108,7 +108,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-screen flex justify-center py-5 bg-[#000820] text-[#F0FDFF] text-[14px]">
+      <div className="w-full flex justify-center py-5 bg-[#000820] text-[#F0FDFF] text-[14px]">
         <p>© 2024 PT SAPTALOKA DIGITAL - ALL RIGHTS RESERVED</p>
       </div>
     </>
