@@ -6,7 +6,7 @@ import React from 'react'
 function Portofolio() {
     return (
         <div className='w-full bg-primary  '>
-            <LandingPorto />
+            <LandingPorto title={'OUR PORTFOLIO'} />
             <FeaturedProject />
         </div>
     )
