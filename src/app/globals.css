@@ -18,7 +18,12 @@
 .body {
   scroll-behavior: smooth;
   background: #000d32;
+  overflow-x: hidden;
 }
+.bg-primary{
+  background-color: #000D32;
+}
+
 .durat {
   transition-duration: 100ms;
 }
@@ -37,7 +42,9 @@
     text-wrap: balance;
   }
 }
-
+.text-blue-light{
+  color:#D8F3FF
+}
 .portbtn {
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
