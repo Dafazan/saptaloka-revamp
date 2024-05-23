@@ -47,3 +47,10 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
+
+.serimg {
+  clip-path: polygon(100% 0%, 100% 48%, 100% 100%, 10% 100%, 0 85%, 13% 0);
+}
+.serimgf {
+  clip-path: polygon(0% 0%, 0% 48%, 0% 100%, 90% 100%, 100% 85%, 87% 0);
+}
