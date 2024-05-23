@@ -15,13 +15,13 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-.body {
-  scroll-behavior: smooth;
+body {
   background: #000d32;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
-.bg-primary{
-  background-color: #000D32;
+.bg-primary {
+  background-color: #000d32;
 }
 
 .durat {
@@ -42,8 +42,8 @@
     text-wrap: balance;
   }
 }
-.text-blue-light{
-  color:#D8F3FF
+.text-blue-light {
+  color: #d8f3ff;
 }
 .portbtn {
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
