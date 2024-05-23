@@ -12,20 +12,17 @@ import Services from "@/components/pages/Services";
 export default function Home() {
   return (
     <main>
-      <Changecolor>
-        <Landingarea />
-        <div id="services" className="flex flex-col">
-          <Services />
-          <div className="w-full"></div>
-          <div className="flex flex-col gap-24"></div>
-          <PortofolioPrev />
-          <p className="bg-white">benerin</p>
-          <ClientsPrev />
-          <CoreValue />
-          <ContactMail />
-          <NewsPrev />
-        </div>
-      </Changecolor>
+      <Landingarea />
+      <div id="services" className="flex flex-col">
+        <Services />
+        <div className="w-full"></div>
+        <div className="flex flex-col gap-24"></div>
+        <PortofolioPrev />
+        <ClientsPrev />
+        <CoreValue />
+        <ContactMail />
+        <NewsPrev />
+      </div>
     </main>
   );
 }
