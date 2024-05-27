@@ -80,8 +80,10 @@ function ClientsPrev() {
   };
 
   const [clients, setClients] = useState<Clients[]>([]);
+  const [partners, setPartners] = useState<Clients[]>([]);
   useEffect(() => {
     getClients();
+    getPartners();
   }, []);
   async function getClients() {
     try {
@@ -99,6 +101,26 @@ function ClientsPrev() {
         data.push({ ...(doc.data() as Clients), id: doc.id });
       });
       setClients(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  }
+  async function getPartners() {
+    try {
+      const ordersRef = collection(db, "partner_saptaloka");
+      const q = query(ordersRef);
+      const querySnapshot = await getDocs(q);
+
+      if (querySnapshot.empty) {
+        console.log("No documents found with status 'public'");
+        return;
+      }
+
+      let data: Clients[] = [];
+      querySnapshot.forEach((doc) => {
+        data.push({ ...(doc.data() as Clients), id: doc.id });
+      });
+      setPartners(data);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -164,16 +186,16 @@ function ClientsPrev() {
       <div className="h-24 w-full flex items-center justify-center mt-10">
         <h3 className="text-[28px] font-bold text-[#D8F3FF]">OUR PARTNER</h3>
       </div>
-      <div className="px-[4%] flex gap-7 justify-center mb-20">
-        <div className="w-36">
-          <img src="/partner/pjk.png" alt="" />
-        </div>
-        <div className="w-36">
-          <img src="/partner/dml.png" alt="" />
-        </div>
-        <div className="w-36">
-          <img src="/partner/dmn.png" alt="" />
-        </div>
+      <div className="px-[4%] flex flex-wrap gap-7 justify-center mb-20">
+        {partners.map((data, i) => (
+          <>
+            <div className="w-36">
+              <img src={data.img} alt="image tidak ada" />
+            </div>
+
+          </>
+        ))}
+
       </div>
     </>
   );
