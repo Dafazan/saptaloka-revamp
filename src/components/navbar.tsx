@@ -3,6 +3,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import SocialLink from "./svgs/sociallink";
 import Sldlogo from "./svgs/sldlogo";
+import Sldlogosq from "./svgs/sldlogosq";
+
 function Navbar() {
   const [isSidebar, setIsSidebar] = useState(false);
 
@@ -62,25 +64,39 @@ function Navbar() {
     <>
       <div className="fixed w-full z-50">
         <div
-          className={`absolute w-full px-[4%] flex justify-between items-center py-[25px] duration-200 
-      ${scrollLocation >= 100 ? "bg-[#000820]" : "bg-transparent"}
-      ${scrollLocation >= 380 && scrollDirection == "down"
-              ? "-translate-y-[90px]"
-              : ""
-            }
+          className={`absolute w-full px-[4%] flex justify-between items-center md:py-[25px] py-2 duration-200 
+      ${
+        scrollLocation >= 100
+          ? "bg-[#000820]"
+          : "md:bg-transparent bg-[#000820] bg-opacity-40"
+      }
+      ${
+        scrollLocation >= 380 && scrollDirection == "down"
+          ? "-translate-y-[90px]"
+          : ""
+      }
       `}
         >
-          <a href="/">
+          <a className="md:block hidden" href="/">
             <Sldlogo />
+          </a>
+          <a className="md:hidden block" href="/">
+            <Sldlogosq />
           </a>
           <div className="flex gap-16 light-text uppercase">
             <div>
-              <a className="hover:text-[#00ffff] duration-200" href="/contact">
+              <a
+                className="hover:text-[#00ffff] duration-200 md:block hidden"
+                href="/contact"
+              >
                 CONTACT US
               </a>
             </div>
             <div>
-              <a className="hover:text-[#00ffff] duration-200" href="/portfolio">
+              <a
+                className="hover:text-[#00ffff] duration-200 md:block hidden"
+                href="/portfolio"
+              >
                 PORTFOLIO
               </a>
             </div>
@@ -91,22 +107,25 @@ function Navbar() {
               className="flex flex-col gap-1"
             >
               <div
-                className={`w-12 h-[5px] ${isMenuHover == true
-                  ? "-translate-x-[3px] bg-[#00FFFF]"
-                  : "-translate-x-[8px] light-bg "
-                  } duration-150`}
+                className={`md:w-12 w-10 h-[5px] ${
+                  isMenuHover == true
+                    ? "-translate-x-[3px] bg-[#00FFFF]"
+                    : "-translate-x-[8px] light-bg "
+                } duration-150`}
               ></div>
               <div
-                className={`w-12 h-[5px] ${isMenuHover == true
-                  ? "-translate-x-[3px] bg-[#00FFFF]"
-                  : " light-bg "
-                  } duration-150`}
+                className={`md:w-12 w-10 h-[5px] ${
+                  isMenuHover == true
+                    ? "-translate-x-[3px] bg-[#00FFFF]"
+                    : " light-bg "
+                } duration-150`}
               ></div>
               <div
-                className={`w-12 h-[5px] ${isMenuHover == true
-                  ? "-translate-x-[3px] bg-[#00FFFF]"
-                  : "-translate-x-[8px] light-bg "
-                  } duration-150`}
+                className={`md:w-12 w-10 h-[5px] ${
+                  isMenuHover == true
+                    ? "-translate-x-[3px] bg-[#00FFFF]"
+                    : "-translate-x-[8px] light-bg "
+                } duration-150`}
               ></div>
             </div>
           </div>
@@ -115,22 +134,24 @@ function Navbar() {
       {isSidebar == true ? (
         <>
           <div className="fixed w-full h-full flex z-50">
-            <div className="w-3/12 bg-black opacity-35"></div>
-            <div className="w-9/12 h-screen bg-[#000820] text-[#2ABDFB] tran flex-flex-col">
-              <div className="h-24 w-full flex justify-between trans p-10">
+            <div className="md:w-3/12 w-0 bg-black opacity-35"></div>
+            <div className="md:w-9/12 w-full h-screen bg-[#000820] text-[#2ABDFB] flex-flex-col">
+              <div className="md:h-24 h-16 w-full flex justify-between trans md:p-10 py-8 px-3">
                 <div></div>
-                <div onClick={CloseSidebar} className="relative pe-16">
+                <div onClick={CloseSidebar} className="relative md:pe-16 pe-12">
                   <div
-                    className={`w-12 h-[5px] bg-[#2ABDFB] rotate-45 duration-150 absolute ${xbutton == true ? "" : "translate-x-32 translate-y-32"
-                      }`}
+                    className={`md:w-12 w-10 h-[5px] bg-[#2ABDFB] rotate-45 duration-150 absolute ${
+                      xbutton == true ? "" : "translate-x-32 translate-y-32"
+                    }`}
                   ></div>
                   <div
-                    className={`w-12 h-[5px] bg-[#2ABDFB] -rotate-45 duration-150 absolute ${xbutton == true ? "" : "translate-x-32 -translate-y-32"
-                      }`}
+                    className={`md:w-12 w-10 h-[5px] bg-[#2ABDFB] -rotate-45 duration-150 absolute ${
+                      xbutton == true ? "" : "translate-x-32 -translate-y-32"
+                    }`}
                   ></div>
                 </div>
               </div>
-              <div className="px-14 text-5xl  font-extrabold flex flex-col gap-5">
+              <div className="md:px-14 px-7 text-5xl  font-extrabold flex flex-col md:gap-5 gap-2">
                 <div className="flex">
                   <div
                     onMouseEnter={() => setLinkhover(1)}
@@ -144,7 +165,10 @@ function Navbar() {
                     ) : (
                       <></>
                     )}
-                    <a className="hover:text-[#00FFFF]" href="/#">
+                    <a
+                      className=" md:text-5xl text-2xl hover:text-[#00FFFF]"
+                      href="/#"
+                    >
                       IT SOLUTION
                     </a>
                   </div>
@@ -162,14 +186,17 @@ function Navbar() {
                     ) : (
                       <></>
                     )}
-                    <a className="hover:text-[#00FFFF]" href="/#">
+                    <a
+                      className=" md:text-5xl text-2xl hover:text-[#00FFFF]"
+                      href="/#"
+                    >
                       FARMTECH
                     </a>
                   </div>
                 </div>
               </div>
-              <div className=" h-[2px] mx-14 my-7 bg-[#2ABDFB]"></div>
-              <div className="px-14 text-3xl font-extrabold flex outline-text flex-col gap-3">
+              <div className=" h-[2px] md:mx-14 m-7 bg-[#2ABDFB]"></div>
+              <div className="md:px-14 px-7 md:text-3xl text-xl font-extrabold flex outline-text flex-col md:gap-3 gap-2">
                 <div className="flex">
                   <div
                     onMouseEnter={() => setLinkhover(3)}
@@ -246,7 +273,7 @@ function Navbar() {
                   </div>
                 </div>
               </div>
-              <div className=" h-[2px] mx-14 my-7 bg-[#2ABDFB]"></div>
+              <div className=" h-[2px] md:mx-14 m-7 bg-[#2ABDFB]"></div>
               <SocialLink />
             </div>
           </div>
