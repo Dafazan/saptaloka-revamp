@@ -14,21 +14,21 @@ function Landingarea() {
       ></div>
       <div className="w-full h-full absolute">
         <div className="w-full h-screen flex flex-col">
-          <div className=" h-[80%] inset-0 flex items-center w-full px-[4%]">
-            <div className="text-white w-full flex flex-col items-start text-start text-[56px] font-bold leading-[65px]">
+          <div className=" h-[80%] inset-0 flex md:flex-row flex-col items-center w-full px-[4%] md:py-0 py-[50%]">
+            <div className="text-white w-full flex flex-col items-start text-start md:text-[56px] text-[26px] font-bold md:leading-[65px] leading-[28px] md:mb-0 mb-5">
               <h1 className="light-text">
                 LEAD YOUR BUSINESS TO DIGITAL TRANSFORMATION
               </h1>
             </div>
-            <div className="text-white w-full flex flex-col items-end text-end text-[26px] font-mediun">
+            <div className="text-white w-full flex flex-col md:items-end md:text-end items-start text-start md:text-[26px] text-[12px] font-mediun">
               <div className="flex w-full">
-                <div className="w-4/12 "></div>
-                <h1 className="w-8/12">
+                <div className="w-0 md:w-4/12 "></div>
+                <h1 className="w-full md:w-8/12">
                   WE DEVELOP SOLUTION TO SOLVE DIGITAL TRANSFORMATION FOR EASIER
                   LIFE
                 </h1>
               </div>
-              <div className="text-[18px] uppercase pt-6">
+              <div className="md:text-[18px] text-[12px]  uppercase pt-6">
                 <a href="/about">
                   <ButtonA text={"MORE ABOUT US"} color="#2ABDFB" />
                 </a>
