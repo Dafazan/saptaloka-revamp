@@ -10,12 +10,17 @@ function ButtonA({ text, color }: { text: string; color: string }) {
       className="flex items-center"
     >
       <p
-        className={`${ishover == true ? "pe-1" : "pe-2"
-          } font-mediun duration-100 text-[${color}]`}
+        className={`${
+          ishover == true ? "pe-1" : "pe-2"
+        } font-mediun duration-100 text-[${color}]`}
       >
         {text}
       </p>
-      <div className={`${ishover == true ? "scale-105" : ""} duration-100`}>
+      <div
+        className={`${
+          ishover == true ? "scale-105" : "md:scale-100 scale-75"
+        } duration-100`}
+      >
         <svg
           width="27"
           height="33"
