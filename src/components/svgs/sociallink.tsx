@@ -2,7 +2,7 @@ import React from "react";
 
 function SocialLink() {
   return (
-    <div className="flex gap-2 px-14">
+    <div className="flex gap-2 md:px-14 px-7">
       <div className="scale-75">
         <svg
           width="38"
