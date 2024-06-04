@@ -54,34 +54,49 @@ function PortofolioPrev() {
   }
 
   return (
-    <>
-      <div className="h-24 w-full flex items-center justify-center">
-        <h3 className="text-[28px] font-bold text-[#D8F3FF]">
-          PROJECTS WE&rsquo;VE DONE
-        </h3>
-      </div>
-      <div className="flex w-full gap-10 px-[4%]">
-        {portfolios.map((data, i) => (
-          <>
-            <PortofolioCard
-              link={`/portfolio/${data.id}`}
-              title={data.title}
-              desc={data.description}
-              image={data.img}
-            />
-          </>
-        ))}
+    <div className="w-full h-full">
+      <div className="w-full md:bg-transparent bg-[#2ABDFB] -translate-y-[1px]">
+        <div className="h-24 w-full flex items-center justify-center">
+          <h3 className="md:text-[28px] text-[18px] font-bold text-[#D8F3FF]">
+            PROJECTS WE&rsquo;VE DONE
+          </h3>
+        </div>
+        <div className="flex md:flex-row flex-col w-full md:gap-10 gap-5 px-[4%]">
+          {portfolios.map((data, i) => (
+            <>
+              <PortofolioCard
+                link={`/portfolio/${data.id}`}
+                title={data.title}
+                desc={data.description}
+                image={data.img}
+              />
+            </>
+          ))}
 
-        <a
-          href="/portofolio"
-          className="w-[80%] h-[400px] portbtn bg-[#2ABDFB] text-[#F0FDFF] hover:translate-x-3 duration-200 flex flex-col justify-center"
-        >
-          <div className="flex justify-end p-6">
-            <p className="w-[80%] text-end font-medium ">SEE MORE PORTFOLIO</p>
-          </div>
-        </a>
+          <a
+            href="/portofolio"
+            className="w-[80%] hidden md:h-[400px] portbtn bg-[#2ABDFB] md:text-[#F0FDFF] text-[#000d32] md:hover:translate-x-3 duration-200 md:flex flex-col justify-center"
+          >
+            <div className="flex md:justify-end md:p-6 justify-center text-center">
+              <p className="md:w-[80%] w-full text-end font-medium ">
+                SEE MORE PORTFOLIO
+              </p>
+            </div>
+          </a>
+          <a
+            href="/portofolio"
+            className="w-full md:hidden flex justify-center py-2"
+          >
+            <div className="flex md:justify-end md:p-6 justify-center text-center">
+              <p className="md:w-[80%] w-full text-end font-medium ">
+                SEE MORE PORTFOLIO
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
-    </>
+      <div className="w-full h-10 bg-[#2ABDFB] block md:hidden upsharp -translate-y-[2px]"></div>
+    </div>
   );
 }
 
