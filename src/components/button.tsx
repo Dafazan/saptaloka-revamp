@@ -12,7 +12,7 @@ function ButtonA({ text, color }: { text: string; color: string }) {
       <p
         className={`${
           ishover == true ? "pe-1" : "pe-2"
-        } font-mediun duration-100 text-[${color}]`}
+        } font-mediun md:text-xl text-xs duration-100 text-[${color}]`}
       >
         {text}
       </p>

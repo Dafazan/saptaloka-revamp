@@ -19,6 +19,9 @@ body {
   background: #000d32;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .bg-primary {
   background-color: #000d32;
@@ -60,4 +63,16 @@ body {
 }
 .serimgf {
   clip-path: polygon(0% 0%, 0% 48%, 0% 100%, 90% 100%, 100% 85%, 87% 0);
+}
+
+.mobileimg {
+  clip-path: polygon(50% 0%, 100% 0, 100% 83%, 50% 100%, 0 83%, 0 0);
+}
+
+.upsharp {
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.downsharp {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
