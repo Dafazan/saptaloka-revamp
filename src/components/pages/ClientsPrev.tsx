@@ -64,6 +64,15 @@ function ClientsPrev() {
     // Scroll two slides at a time
   };
 
+  const settings2 = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Display two slides at a time
+    slidesToScroll: 1,
+    // Scroll two slides at a time
+  };
+
   const [value, setValue] = useState(0);
   const incrementValue = () => {
     setValue((prevValue) => (prevValue + 1) % 11); // Loop from 0 to 10
@@ -128,10 +137,12 @@ function ClientsPrev() {
 
   return (
     <>
-      <div className="h-24 w-full flex items-center justify-center mt-20">
-        <h3 className="text-[28px] font-bold text-[#D8F3FF]">OUR CLIENTS</h3>
+      <div className="h-24 w-full flex items-center justify-center md:mt-20 mt-5">
+        <h3 className="md:text-[28px] text-[18px] font-bold text-[#D8F3FF]">
+          OUR CLIENTS
+        </h3>
       </div>
-      <div className="flex justify-center gap-5 px-[5%]">
+      <div className="flex justify-center md:gap-5 px-[5%]">
         <button className="bg-transparent border-none" onClick={handlePrev3}>
           <svg
             className="rotate-180"
@@ -149,22 +160,42 @@ function ClientsPrev() {
             />
           </svg>
         </button>
-        <Slider
-          {...settings}
-          className="w-[96%] "
-          ref={sliderRef}
-          arrows={false}
-          autoplay={true}
-          autoplaySpeed={2000}
-        >
-          {clients.map((data, i) => (
-            <>
-              <div className="px-5">
-                <img key={i} src={data.img} alt={data.id} />
-              </div>
-            </>
-          ))}
-        </Slider>
+        <div className="w-full md:block hidden">
+          <Slider
+            {...settings}
+            className="w-[96%] "
+            ref={sliderRef}
+            arrows={false}
+            autoplay={true}
+            autoplaySpeed={2000}
+          >
+            {clients.map((data, i) => (
+              <>
+                <div className="px-5">
+                  <img key={i} src={data.img} alt={data.id} />
+                </div>
+              </>
+            ))}
+          </Slider>
+        </div>
+        <div className="md:w-full w-[80%] block md:hidden">
+          <Slider
+            {...settings2}
+            className="w-[96%] "
+            ref={sliderRef}
+            arrows={false}
+            autoplay={true}
+            autoplaySpeed={2000}
+          >
+            {clients.map((data, i) => (
+              <>
+                <div className="md:px-5 px-2">
+                  <img key={i} src={data.img} alt={data.id} />
+                </div>
+              </>
+            ))}
+          </Slider>
+        </div>
 
         <button className="bg-transparent border-none" onClick={handleNext3}>
           <svg
@@ -183,19 +214,19 @@ function ClientsPrev() {
           </svg>
         </button>
       </div>
-      <div className="h-24 w-full flex items-center justify-center mt-10">
-        <h3 className="text-[28px] font-bold text-[#D8F3FF]">OUR PARTNER</h3>
+      <div className="h-24 w-full flex items-center justify-center md:mt-10 mt-5">
+        <h3 className="md:text-[28px] text-[18px] font-bold text-[#D8F3FF]">
+          OUR PARTNER
+        </h3>
       </div>
       <div className="px-[4%] flex flex-wrap gap-7 justify-center mb-20">
         {partners.map((data, i) => (
           <>
-            <div className="w-36">
+            <div className="md:w-36 w-20">
               <img src={data.img} alt="image tidak ada" />
             </div>
-
           </>
         ))}
-
       </div>
     </>
   );

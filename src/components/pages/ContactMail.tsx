@@ -16,16 +16,17 @@ function ContactMail() {
   };
 
   return (
-    <>
+    <div className="w-full h-full bg-[#D2F2FF]">
+      <div className="w-full h-10 bg-[#000d32] block md:hidden upsharp -translate-y-[2px]"></div>
       <div className="bg-[#D2F2FF] w-full p-[4%] py-[5%] text-[#00103E]">
-        <h3 className="text-[44px] font-extrabold leading-[50px]">
+        <h3 className="md:text-[44px] text-[22px] md:text-left text-center font-extrabold md:leading-[50px]">
           INTERESTED TO WORKING WITH US?
         </h3>
-        <h3 className="text-[44px] font-extrabold leading-[50px]">
+        <h3 className="md:text-[44px] md:mt-0 mt-5 text-[22px] md:text-left text-center font-extrabold md:leading-[50px]">
           CONTACT US!
         </h3>
-        <form className="flex mt-10 gap-16">
-          <div className="w-3/6 flex flex-col gap-2">
+        <form className="flex md:flex-row flex-col mt-10 md:gap-16 gap-2">
+          <div className="md:w-3/6 w-full flex flex-col gap-2">
             <div className="w-full">
               <p className="text-[14px] font-bold">
                 WHAT KIND OF SERVICE DO YOU NEED?
@@ -45,8 +46,9 @@ function ContactMail() {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`h-6 w-6 transition-transform ${isOpen ? "transform rotate-180" : ""
-                      }`}
+                    className={`h-6 w-6 transition-transform ${
+                      isOpen ? "transform rotate-180" : ""
+                    }`}
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -166,7 +168,7 @@ function ContactMail() {
               />
             </div>
           </div>
-          <div className="w-3/6 flex flex-col gap-2">
+          <div className="md:w-3/6 w-full flex flex-col gap-2">
             <div className="w-full">
               <p className="text-[14px] font-bold">SUBJECT</p>
               <input
@@ -188,7 +190,7 @@ function ContactMail() {
             <div className="w-full h-full">
               <button
                 type="submit"
-                className="w-full h-full bg-[#2ABDFB] hover:bg-[#61d0ff] text-[#D8F3FF] text-[14px] font-bold flex justify-center items-center gap-2 hover:gap-4 duration-200"
+                className="w-full md:h-full h-10 bg-[#2ABDFB] hover:bg-[#61d0ff] text-[#D8F3FF] text-[14px] font-bold flex justify-center items-center gap-2 hover:gap-4 duration-200"
               >
                 <p>SEND MESSAGE</p>
                 <div>
@@ -211,7 +213,7 @@ function ContactMail() {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 }
 
