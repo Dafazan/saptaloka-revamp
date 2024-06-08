@@ -13,8 +13,7 @@ function Footer() {
         <div className="flex w-full justify-center">
           <div className="w-2/6 text-[#F0FDFF]">
             <p className="text-center leading-5 py-5 text-[14px]">
-              JALAN MELONG TENGAH NO.138 CIMAHI SELATAN, KOTA CIMAHI, JAWA BARAT
-              40534
+              JAKARTA PUSAT, INDONESIA
             </p>
           </div>
         </div>
@@ -56,7 +55,7 @@ function Footer() {
             </div>
             <a href="/#">ADMIN@SAPTALOKADIGITAL.COM</a>
           </div>
-          <div className="flex gap-2 items-center">
+          {/* <div className="flex gap-2 items-center">
             <div>
               <svg
                 width="18"
@@ -105,7 +104,7 @@ function Footer() {
               </svg>
             </div>
             <a href="/#">+6281999737800</a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="w-full flex justify-center py-5 bg-[#000820] text-[#F0FDFF] text-[14px]">
