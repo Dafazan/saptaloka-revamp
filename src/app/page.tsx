@@ -21,7 +21,7 @@ export default function Home() {
         <ClientsPrev />
         <CoreValue />
         <ContactMail />
-        <NewsPrev />
+        {/* <NewsPrev /> */}
       </div>
     </main>
   );
