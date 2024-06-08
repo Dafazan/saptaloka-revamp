@@ -188,7 +188,8 @@ function ContactMail() {
               />
             </div>
             <div className="w-full h-full">
-              <button
+              <a
+                href="mailto:saptalokadigital@gmail.com"
                 type="submit"
                 className="w-full md:h-full h-10 bg-[#2ABDFB] hover:bg-[#61d0ff] text-[#D8F3FF] text-[14px] font-bold flex justify-center items-center gap-2 hover:gap-4 duration-200"
               >
@@ -208,7 +209,7 @@ function ContactMail() {
                     />
                   </svg>
                 </div>
-              </button>
+              </a>
             </div>
           </div>
         </form>
