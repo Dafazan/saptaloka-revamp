@@ -24,9 +24,12 @@ function Services() {
             </div>
             <div className="w-full h-full"></div>
           </div>
-          <div className=" w-[50%] h-[20%] ps-[4%] text-[#D2F2FF] z-40 flex flex-col justify-center">
+          <a
+            href="/newpage"
+            className=" w-[50%] h-[20%] ps-[4%] text-[#D2F2FF] z-40 flex flex-col justify-center"
+          >
             <ButtonA text="MORE DETAIL" color="#D2F2FF" />
-          </div>
+          </a>
         </div>
         <div className="w-full  h-[315px] absolute flex justify-end">
           <div className="h-full serimg bg-blue-300 w-[45%]">
@@ -53,9 +56,12 @@ function Services() {
               </p>
             </div>
           </div>
-          <div className=" w-[50%] h-[20%] pe-[4%] text-[#D2F2FF] z-40 flex flex-col justify-center items-end">
+          <a
+            href="/newpage"
+            className=" w-[50%] h-[20%] pe-[4%] text-[#D2F2FF] z-40 flex flex-col justify-center items-end"
+          >
             <ButtonA text="MORE DETAIL" color="#D2F2FF" />
-          </div>
+          </a>
         </div>
         <div className="w-full  h-[315px] absolute flex justify-start">
           <div className="h-full serimgf bg-blue-300 w-[45%]">

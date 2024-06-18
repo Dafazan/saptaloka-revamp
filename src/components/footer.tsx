@@ -20,15 +20,15 @@ function Footer() {
         <div className="w-full h-[2px] bg-[#F0FDFF]"></div>
         <div className="grid grid-cols-5 items-center font-bold text-[16px] text-[#2ABDFB]">
           <div className="flex justify-start">
-            <a href="/#">CONTACT US</a>
+            <a href="/newpage">CONTACT US</a>
           </div>
           <div></div>
 
           <div className="flex justify-end">
-            <a href="/#">WORK WITH US</a>
+            <a href="/newpage">WORK WITH US</a>
           </div>
           <div className="flex justify-end">
-            <a href="/#">PRIVACY POLICY</a>
+            <a href="/newpage">PRIVACY POLICY</a>
           </div>
 
           <div className=" flex justify-end">
@@ -53,7 +53,9 @@ function Footer() {
                 />
               </svg>
             </div>
-            <a href="/#">ADMIN@SAPTALOKADIGITAL.COM</a>
+            <a href="mailto:admin@saptalokadigital.com">
+              ADMIN@SAPTALOKADIGITAL.COM
+            </a>
           </div>
           {/* <div className="flex gap-2 items-center">
             <div>
@@ -78,7 +80,7 @@ function Footer() {
                 />
               </svg>
             </div>
-            <a href="/#">+6283873296832</a>
+            <a href="/newpage">+6283873296832</a>
           </div>
           <div className="flex gap-2 items-center">
             <div>
@@ -103,7 +105,7 @@ function Footer() {
                 />
               </svg>
             </div>
-            <a href="/#">+6281999737800</a>
+            <a href="/newpage">+6281999737800</a>
           </div> */}
         </div>
       </div>
