@@ -87,7 +87,7 @@ function Navbar() {
             <div>
               <a
                 className="hover:text-[#00ffff] duration-200 md:block hidden"
-                href="/contact"
+                href="/newpage"
               >
                 CONTACT US
               </a>
