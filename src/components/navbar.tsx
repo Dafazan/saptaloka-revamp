@@ -180,7 +180,7 @@ function Navbar() {
                 )}
                 <a
                   className=" md:text-5xl text-2xl hover:text-[#00FFFF]"
-                  href="/#"
+                  href="/newpage"
                 >
                   IT SOLUTION
                 </a>
@@ -201,7 +201,7 @@ function Navbar() {
                 )}
                 <a
                   className=" md:text-5xl text-2xl hover:text-[#00FFFF]"
-                  href="/#"
+                  href="/newpage"
                 >
                   FARMTECH
                 </a>
@@ -261,7 +261,7 @@ function Navbar() {
                 ) : (
                   <></>
                 )}
-                <a className="hover:text-[#00FFFF] " href="/contact">
+                <a className="hover:text-[#00FFFF] " href="/newpage">
                   CONTACT US
                 </a>
               </div>
@@ -280,7 +280,7 @@ function Navbar() {
                 ) : (
                   <></>
                 )}
-                <a className="hover:text-[#00FFFF] " href="/information">
+                <a className="hover:text-[#00FFFF] " href="/newpage">
                   INFORMATION AND NEWS
                 </a>
               </div>

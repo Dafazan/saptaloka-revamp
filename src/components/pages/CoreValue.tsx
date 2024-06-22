@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import ArrowR from "../cards/arrowonly";
 
 function CoreValue() {
   const [linkhover, setLinkhover] = useState(0);
@@ -19,11 +20,11 @@ function CoreValue() {
             <div
               onMouseEnter={() => setLinkhover(1)}
               onMouseLeave={() => setLinkhover(0)}
-              className="flex gap-3 "
+              className="flex items-center gap-3 "
             >
               {linkhover == 1 ? (
                 <>
-                  <img src="/arrowonly.svg" alt="" />
+                  <ArrowR />
                 </>
               ) : (
                 <></>
@@ -35,11 +36,11 @@ function CoreValue() {
             <div
               onMouseEnter={() => setLinkhover(2)}
               onMouseLeave={() => setLinkhover(0)}
-              className="flex gap-3 "
+              className="flex items-center gap-3 "
             >
               {linkhover == 2 ? (
                 <>
-                  <img src="/arrowonly.svg" alt="" />
+                  <ArrowR />
                 </>
               ) : (
                 <></>
@@ -51,11 +52,11 @@ function CoreValue() {
             <div
               onMouseEnter={() => setLinkhover(3)}
               onMouseLeave={() => setLinkhover(0)}
-              className="flex gap-3 "
+              className="flex items-center gap-3 "
             >
               {linkhover == 3 ? (
                 <>
-                  <img src="/arrowonly.svg" alt="" />
+                  <ArrowR />
                 </>
               ) : (
                 <></>
@@ -67,11 +68,11 @@ function CoreValue() {
             <div
               onMouseEnter={() => setLinkhover(4)}
               onMouseLeave={() => setLinkhover(0)}
-              className="flex gap-3 "
+              className="flex items-center gap-3 "
             >
               {linkhover == 4 ? (
                 <>
-                  <img src="/arrowonly.svg" alt="" />
+                  <ArrowR />
                 </>
               ) : (
                 <></>
@@ -83,11 +84,11 @@ function CoreValue() {
             <div
               onMouseEnter={() => setLinkhover(5)}
               onMouseLeave={() => setLinkhover(0)}
-              className="flex gap-3 "
+              className="flex items-center gap-3 "
             >
               {linkhover == 5 ? (
                 <>
-                  <img src="/arrowonly.svg" alt="" />
+                  <ArrowR />
                 </>
               ) : (
                 <></>
@@ -99,11 +100,11 @@ function CoreValue() {
             <div
               onMouseEnter={() => setLinkhover(6)}
               onMouseLeave={() => setLinkhover(0)}
-              className="flex gap-3 "
+              className="flex items-center gap-3 "
             >
               {linkhover == 6 ? (
                 <>
-                  <img src="/arrowonly.svg" alt="" />
+                  <ArrowR />
                 </>
               ) : (
                 <></>
