@@ -8,6 +8,7 @@ function Sldlogo() {
       viewBox="0 0 343 37"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="md:scale-100 scale-75"
     >
       <g clipPath="url(#clip0_65_2)">
         <path
