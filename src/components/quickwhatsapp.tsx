@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 function WhatsappShortcut() {
-  const [hover, setHover] = useState(true);
+  const [hover, setHover] = useState(false);
 
   function hoverin() {
     setHover(true);
