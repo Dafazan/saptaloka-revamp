@@ -131,19 +131,21 @@ function Navbar() {
           </div>
         </div>
       </div>
-      {/* {isSidebar == true ? (
-        <> */}
+      {isSidebar == true ? (
+        <>
+          <div className="bg-black w-full h-full fixed top-0 z-50 opacity-50"></div>
+        </>
+      ) : null}
       <div
         className={`${
           isSidebar == true
-            ? ""
-            : "md:translate-x-[100%] md:translate-y-0 -translate-y-[100%]"
+            ? "opacity-100"
+            : "md:translate-x-[100%] md:translate-y-0 -translate-y-[100%] opacity-0"
         } fixed w-full h-full flex z-50 duration-300`}
       >
         <div
-          className={`md:w-3/12 w-0 bg-black opacity-35 duration-[3000ms] ${
-            isSidebar == true ? "" : "opacity-0"
-          }`}
+          className={`md:w-3/12 w-0  opacity-35 duration-[5000ms]
+          `}
         ></div>
         <div className="md:w-9/12 w-full h-screen bg-[#000820] text-[#2ABDFB] flex-flex-col">
           <div className="md:h-24 h-16 w-full flex justify-between trans md:p-10 py-8 px-3">
