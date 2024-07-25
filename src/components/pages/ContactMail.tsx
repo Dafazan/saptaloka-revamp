@@ -18,7 +18,7 @@ function ContactMail() {
   return (
     <div className="w-full h-full bg-[#D2F2FF]">
       <div className="w-full h-10 bg-[#000d32] block md:hidden upsharp -translate-y-[2px]"></div>
-      <div className="bg-[#D2F2FF] w-full p-[4%] py-[5%] text-[#00103E]">
+      <div className="bg-[#D2F2FF] w-full p-[4%] py-[5%] text-[#00103E] 2xl:px-[10%]">
         <h3 className="md:text-[44px] text-[22px] md:text-left text-center font-extrabold md:leading-[50px]">
           INTERESTED TO WORKING WITH US?
         </h3>
