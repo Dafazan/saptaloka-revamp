@@ -11,7 +11,7 @@ function WhatsappShortcut() {
     setHover(false);
   }
   return (
-    <div className="fixed bottom-0 right-0 pe-[4%] pb-5 z-50">
+    <div className="fixed bottom-0 right-0 pe-[4%] 2xl:pe-[10%] pb-5 z-50">
       <a
         href="https://web.whatsapp.com/send?phone=6283873296832&text="
         target="blank"
