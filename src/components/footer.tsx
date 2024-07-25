@@ -6,7 +6,7 @@ import Sldlogo from "./svgs/sldlogo";
 function Footer() {
   return (
     <>
-      <div className="w-full flex flex-col bg-[#00103E] px-[4%] md:pt-[2%] md:gap-3 pt-5">
+      <div className="w-full flex flex-col bg-[#00103E] px-[4%] 2xl:px-[10%] md:pt-[2%] md:gap-3 pt-5">
         <div className="flex w-full justify-center">
           <Sldlogo />
         </div>
@@ -39,7 +39,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="px-[4%] py-2 md:py-0 flex flex-col items-center md:items-start text-[14px] text-[#F0FDFF] bg-[#00103E] pb-[2%]">
+      <div className="px-[4%] 2xl:px-[10%] py-2 md:py-0 flex flex-col items-center md:items-start text-[14px] text-[#F0FDFF] bg-[#00103E] pb-[2%]">
         <div className="flex flex-col gap-2 md:pb-5">
           <div className="flex gap-2 items-center">
             <div>
