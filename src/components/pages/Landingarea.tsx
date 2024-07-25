@@ -1,7 +1,46 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import ButtonA from "../button";
-
+import { db } from "@/db/firebase";
+import {
+  collection,
+  addDoc,
+  getDocs,
+  where,
+  query,
+  getDoc,
+  deleteDoc,
+  updateDoc,
+  doc,
+  orderBy,
+  limit,
+  Firestore,
+  serverTimestamp,
+} from "firebase/firestore";
 function Landingarea() {
+
+  const [text, setText] = useState<any>();
+
+  useEffect(() => {
+    getText();
+  }, []);
+
+
+  async function getText() {
+    try {
+      let data: React.SetStateAction<any[]> = []
+      const q = query(collection(db, "site"))
+      const querySnapshot = await getDocs(q);
+      querySnapshot.forEach((doc) => {
+        data.push({ ...(doc.data()), id: doc.id });
+      });
+
+      setText(data);
+    } catch (error) {
+      console.error('Error fetching data: ', error);
+
+    }
+  }
   return (
     <div className="h-screen w-full relative overflow-hidden">
       <div
@@ -17,15 +56,30 @@ function Landingarea() {
           <div className=" 2xl:px-[10%] h-[80%] inset-0 flex md:flex-row flex-col items-center w-full px-[4%] md:py-0 py-[50%]">
             <div className="text-white w-full flex flex-col items-start text-start md:text-[56px] text-[26px] font-bold md:leading-[65px] leading-[28px] md:mb-0 mb-5">
               <h1 className="light-text">
-                LEAD YOUR BUSINESS TO DIGITAL TRANSFORMATION
+                {text == null ? (
+                  <>
+                    -
+                  </>
+                ) : (
+                  <>
+                    {text[5].heading}
+                  </>
+                )}
               </h1>
             </div>
             <div className="text-white w-full flex flex-col md:items-end md:text-end items-start text-start md:text-[26px] text-[12px] font-mediun">
               <div className="flex w-full">
                 <div className="w-0 md:w-4/12 "></div>
                 <h1 className="w-full md:w-8/12">
-                  WE DEVELOP SOLUTION TO SOLVE DIGITAL TRANSFORMATION FOR EASIER
-                  LIFE
+                  {text == null ? (
+                    <>
+                      -
+                    </>
+                  ) : (
+                    <>
+                      {text[5].heading_2}
+                    </>
+                  )}
                 </h1>
               </div>
               <div className="md:text-[18px] text-[12px]  uppercase pt-6">

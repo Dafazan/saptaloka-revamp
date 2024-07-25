@@ -13,15 +13,14 @@ function WhatsappShortcut() {
   return (
     <div className="fixed bottom-0 right-0 pe-[4%] 2xl:pe-[10%] pb-5 z-50">
       <a
-        href="https://web.whatsapp.com/send?phone=6283873296832&text="
+        href="https://wa.me/6283873296832"
         target="blank"
       >
         <div
           onMouseEnter={hoverin}
           onMouseLeave={xhoverin}
-          className={`bg-green-500 text-white ${
-            hover == true ? "px-4 gap-1" : ""
-          } p-2  rounded-full flex items-center`}
+          className={`bg-green-500 text-white ${hover == true ? "px-4 gap-1" : ""
+            } p-2  rounded-full flex items-center`}
         >
           <svg
             width="30px"
@@ -36,9 +35,8 @@ function WhatsappShortcut() {
             />
           </svg>
           <p
-            className={`${
-              hover == true ? "opacity-100" : "w-0 h-0 opacity-0"
-            } `}
+            className={`${hover == true ? "opacity-100" : "w-0 h-0 opacity-0"
+              } `}
           >
             Tell us what you need!
           </p>
