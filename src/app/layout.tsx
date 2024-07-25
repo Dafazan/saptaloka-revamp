@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="w-full h-full ">
-          <div className="w-full h-full 2xl:px-[10%] absolute">
+          <div className="w-full h-full  absolute">
             {children}
             <Footer />
           </div>
