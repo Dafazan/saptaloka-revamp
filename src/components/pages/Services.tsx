@@ -10,7 +10,7 @@ function Services() {
       {/* DESKTOP */}
       <div className="w-full hidden relative h-[315px] md:flex flex-col justify-center my-10">
         <div className="w-full  h-[300px] absolute md:flex flex-col">
-          <div className="bg-[#2ABDFB] h-[80%] flex ps-[4%] ">
+          <div className="bg-[#2ABDFB] h-[80%] flex ps-[4%] 2xl:ps-[10%] ">
             <div className="  w-full h-full flex flex-col pt-5">
               <h2 className="text-[44px] flex flex-col font-extrabold">
                 <span className="h-12">SAPTALOKA DIGITAL</span>{" "}
@@ -26,7 +26,7 @@ function Services() {
           </div>
           <a
             href="/newpage"
-            className=" w-[50%] h-[20%] ps-[4%] text-[#D2F2FF] z-40 flex flex-col justify-center"
+            className=" w-[50%] h-[20%] 2xl:ps-[10%] ps-[4%] text-[#D2F2FF] z-40 flex flex-col justify-center"
           >
             <ButtonA text="MORE DETAIL" color="#D2F2FF" />
           </a>
@@ -44,7 +44,7 @@ function Services() {
 
       <div className="w-full hidden relative h-[315px] md:flex flex-col justify-center my-10 ">
         <div className="w-full  h-[300px] absolute flex flex-col items-end">
-          <div className="bg-[#2ABDFB] w-full h-[80%] flex pe-[4%]  ">
+          <div className="bg-[#2ABDFB] w-full h-[80%] flex pe-[4%] 2xl:pe-[10%] ">
             <div className="w-full h-full"></div>
             <div className="  w-full h-full flex flex-col pt-5 items-end">
               <h2 className="text-[44px] text-end flex flex-col font-extrabold">
@@ -58,7 +58,7 @@ function Services() {
           </div>
           <a
             href="/newpage"
-            className=" w-[50%] h-[20%] pe-[4%] text-[#D2F2FF] z-40 flex flex-col justify-center items-end"
+            className=" w-[50%] h-[20%] 2xl:pe-[10%] pe-[4%] text-[#D2F2FF] z-40 flex flex-col justify-center items-end"
           >
             <ButtonA text="MORE DETAIL" color="#D2F2FF" />
           </a>

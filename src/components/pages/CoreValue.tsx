@@ -6,7 +6,7 @@ function CoreValue() {
   const [linkhover, setLinkhover] = useState(0);
   return (
     <>
-      <main className="py-[4%] p-[4%] md:block hidden">
+      <main className="py-[4%] p-[4%] md:block hidden 2xl:px-[10%]">
         <section className="w-full flex flex-col justify-center items-center">
           <h1 className="text-blue-light text-[30px] font-extrabold">
             WE&rsquo;RE SAPTALOKA DIGITAL,{" "}

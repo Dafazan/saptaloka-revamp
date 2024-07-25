@@ -14,7 +14,7 @@ function Landingarea() {
       ></div>
       <div className="w-full h-full absolute">
         <div className="w-full h-screen flex flex-col">
-          <div className=" h-[80%] inset-0 flex md:flex-row flex-col items-center w-full px-[4%] md:py-0 py-[50%]">
+          <div className=" 2xl:px-[10%] h-[80%] inset-0 flex md:flex-row flex-col items-center w-full px-[4%] md:py-0 py-[50%]">
             <div className="text-white w-full flex flex-col items-start text-start md:text-[56px] text-[26px] font-bold md:leading-[65px] leading-[28px] md:mb-0 mb-5">
               <h1 className="light-text">
                 LEAD YOUR BUSINESS TO DIGITAL TRANSFORMATION
