@@ -61,7 +61,7 @@ function PortofolioPrev() {
             PROJECTS WE&rsquo;VE DONE
           </h3>
         </div>
-        <div className="flex md:flex-row flex-col w-full md:gap-10 gap-5 px-[4%]">
+        <div className="flex md:flex-row flex-col w-full md:gap-10 gap-5 px-[4%] 2xl:px-[13%]">
           {portfolios.map((data, i) => (
             <>
               <PortofolioCard
