@@ -142,7 +142,7 @@ function ClientsPrev() {
           OUR CLIENTS
         </h3>
       </div>
-      <div className="flex justify-center md:gap-5 px-[5%]">
+      <div className="flex justify-center md:gap-5 px-[5%] 2xl:px-[10%]">
         <button className="bg-transparent border-none" onClick={handlePrev3}>
           <svg
             className="rotate-180"
