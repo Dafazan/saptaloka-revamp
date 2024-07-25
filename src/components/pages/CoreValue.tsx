@@ -1,9 +1,48 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ArrowR from "../cards/arrowonly";
+import { db } from "@/db/firebase";
+import {
+  collection,
+  addDoc,
+  getDocs,
+  where,
+  query,
+  getDoc,
+  deleteDoc,
+  updateDoc,
+  doc,
+  orderBy,
+  limit,
+  Firestore,
+  serverTimestamp,
+} from "firebase/firestore";
 
 function CoreValue() {
   const [linkhover, setLinkhover] = useState(0);
+
+  const [text, setText] = useState<any>();
+
+  useEffect(() => {
+    getText();
+  }, []);
+
+
+  async function getText() {
+    try {
+      let data: React.SetStateAction<any[]> = []
+      const q = query(collection(db, "site_content"))
+      const querySnapshot = await getDocs(q);
+      querySnapshot.forEach((doc) => {
+        data.push({ ...(doc.data()), id: doc.id });
+      });
+
+      setText(data);
+    } catch (error) {
+      console.error('Error fetching data: ', error);
+
+    }
+  }
   return (
     <>
       <main className="py-[4%] p-[4%] md:block hidden 2xl:px-[10%]">
@@ -117,21 +156,78 @@ function CoreValue() {
           <div className="w-8/12">
             {linkhover == 1 ? (
               <p className="text-blue-light text-[18px]">
-                SAPTALOKA DIGITAL MEMEGANG TEGUH KEPERCAYAAN YANG DIBERIKAN
-                DENGAN PENUH INTEGRITAS DAN TANGGUNG JAWAB, MENJAGA AMANAH
-                TERSEBUT SEBAGAI LANDASAN UTAMA DALAM SETIAP LANGKAH DAN
-                KEPUTUSAN YANG DIAMBIL.
+                {text == null ? (
+                  <>
+                    -
+                  </>
+                ) : (
+                  <>
+                    {text[1].amanah}
+                  </>
+                )}
               </p>
             ) : linkhover == 2 ? (
-              <p className="text-blue-light text-[18px]">Ini L.</p>
+              <p className="text-blue-light text-[18px]">
+                {text == null ? (
+                  <>
+                    -
+                  </>
+                ) : (
+                  <>
+                    {text[1].loyal}
+                  </>
+                )}
+              </p>
             ) : linkhover == 3 ? (
-              <p className="text-blue-light text-[18px]">Ini I.</p>
+              <p className="text-blue-light text-[18px]">
+                {text == null ? (
+                  <>
+                    -
+                  </>
+                ) : (
+                  <>
+                    {text[1].innovative}
+                  </>
+                )}
+              </p>
             ) : linkhover == 4 ? (
-              <p className="text-blue-light text-[18px]">Ini V.</p>
+              <p className="text-blue-light text-[18px]">
+                {text == null ? (
+                  <>
+                    -
+                  </>
+                ) : (
+                  <>
+                    {text[1].visioner}
+                  </>
+                )}
+              </p>
             ) : linkhover == 5 ? (
-              <p className="text-blue-light text-[18px]">Ini E.</p>
+              <p className="text-blue-light text-[18px]">
+
+                {text == null ? (
+                  <>
+                    -
+                  </>
+                ) : (
+                  <>
+                    {text[1].enthusiastic}
+                  </>
+                )}
+              </p>
             ) : linkhover == 6 ? (
-              <p className="text-blue-light text-[18px]">Ini S.</p>
+              <p className="text-blue-light text-[18px]">
+
+                {text == null ? (
+                  <>
+                    -
+                  </>
+                ) : (
+                  <>
+                    {text[1].solutive}
+                  </>
+                )}
+              </p>
             ) : (
               ""
             )}
