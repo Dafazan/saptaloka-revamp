@@ -8,10 +8,12 @@ import ContactMail from "@/components/pages/ContactMail";
 import NewsPrev from "@/components/pages/NewsPrev";
 import Landingarea from "@/components/pages/Landingarea";
 import Services from "@/components/pages/Services";
+import Loading from "@/components/pages/Loading";
 
 export default function Home() {
   return (
     <main>
+      <Loading />
       <Landingarea />
       <div id="services" className="flex flex-col">
         <Services />
