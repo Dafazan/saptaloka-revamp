@@ -64,7 +64,7 @@ function Navbar() {
     <>
       <div className="fixed w-full z-50">
         <div
-          className={`absolute w-full px-[4%] 2xl:px-[13%] flex justify-between items-center md:py-[25px] py-2 duration-200 
+          className={`absolute w-full px-[4%] 2xl:px-[10%] flex justify-between items-center md:py-[25px] py-2 duration-200 
       ${
         scrollLocation >= 100
           ? "bg-[#000820]"
