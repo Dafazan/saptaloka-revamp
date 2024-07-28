@@ -9,8 +9,6 @@ import NewsPrev from "@/components/pages/NewsPrev";
 import Founder from "@/components/profileCard/founder";
 import Team from "@/components/profileCard/team";
 
-
-
 export default function About() {
   return (
     <main>
@@ -234,7 +232,6 @@ export default function About() {
           </svg>
         </div>
         <div className="flex w-full">
-
           <div className="flex md:w-9/12 flex-col gap-8">
             <h2 className="md:text-justify text-slate-900 text-xl font-medium">
               SAPTALOKA DIGITAL MERUPAKAN PERUSAHAAN YANG BERGERAK DI BIDANG IT
@@ -349,7 +346,7 @@ export default function About() {
             <Founder
               nama={"Fikri Zaki Aditama, S.Si"}
               jabatan={"FOUNDER & HEAD OF IT"}
-              foto={"/Rectangle 75.png"}
+              foto={"/fza.png"}
               linked={undefined}
               ig={undefined}
               web={undefined}
@@ -360,7 +357,7 @@ export default function About() {
           <Team
             nama={"Acép Wahyu Kurna"}
             jabatan={"Back-end Developer"}
-            foto={"/Rectangle 76.png"}
+            foto={"/awk.png"}
             linked={undefined}
             ig={undefined}
             web={undefined}
@@ -374,9 +371,9 @@ export default function About() {
             web={undefined}
           />
           <Team
-            nama={"M. Daffa Fauzan"}
+            nama={"Daffa Fauzan"}
             jabatan={"UI/UX Designer"}
-            foto={"/Rectangle 78.png"}
+            foto={"/mdf.png"}
             linked={undefined}
             ig={undefined}
             web={undefined}
