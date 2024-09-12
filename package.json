@@ -14,6 +14,7 @@
     "firebase-admin": "^12.2.0",
     "framer-motion": "^11.2.10",
     "google-fonts": "^1.0.0",
+    "gsap": "^3.12.5",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
@@ -22,6 +23,7 @@
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
+    "@types/gsap": "^3.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

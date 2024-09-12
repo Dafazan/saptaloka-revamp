@@ -13,7 +13,6 @@ import Loading from "@/components/pages/Loading";
 export default function Home() {
   return (
     <main>
-      <Loading />
       <Landingarea />
       <div id="services" className="flex flex-col">
         <Services />
