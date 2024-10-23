@@ -9,6 +9,7 @@ import NewsPrev from "@/components/pages/NewsPrev";
 import Landingarea from "@/components/pages/Landingarea";
 import Services from "@/components/pages/Services";
 import Loading from "@/components/pages/Loading";
+import Price from "@/components/pages/Price";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Services />
         <div className="w-full"></div>
         <div className="flex flex-col gap-24"></div>
+        <Price/>
         <PortofolioPrev />
         <ClientsPrev />
         <CoreValue />

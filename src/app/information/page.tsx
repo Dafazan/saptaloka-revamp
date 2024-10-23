@@ -1,94 +1,47 @@
-import ButtonA from '@/components/button'
-import NewsCard from '@/components/cards/NewsCard'
-import LandingPort from '@/components/portfolioComponents/landingPorto'
-import React from 'react'
+import React from "react";
+import Image from "next/image";
+import LandingPort from "@/components/portfolioComponents/landingPorto";
+import OtherPost from "@/components/InfandNewsComponents/otherPost";
 
-function Page() {
-    return (
-        <>
-            <div className='w-full bg-primary ' >
-                <LandingPort title={"INFORMATION & NEWS"} />
-                <div>
-                    <h2 className='text-blue-light font-extrabold text-[30px] p-[4%]'>RECENT POST</h2>
-                    <div className='px-[4%] flex gap-5'>
-                        <img src="/Rectangle 61.png" alt="" className='w-[401px]' />
-                        <div className='text-blue-light flex flex-col h-52 justify-between'>
-                            <div>
+function Newpage() {
+  return (
+    // <div className="w-full h-full flex md:flex-row flex-col md:pt-0 pt-10 justify-center items-center text-white gap-5">
+    //   <div className="md:w-3/6 w-full p-[4%] flex flex-col gap-3">
+    //     <p className="text-4xl font-semibold">PAGE UNDER MAINTENANCE</p>
+    //     <p className="text-xl">
+    //       Hang on there! the page is currently under maintenance, we are going
+    //       to back shortly!
+    //     </p>
+    //   </div>
+    //   <div className="md:w-3/6 w-full p-[4%]">
+    //     <Image
+    //       src={
+    //         "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGZrbXkyOG8zMm93MGpxYWUzbGlzZ2ZtcTI0bzExbHprbzQzNTVpYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif"
+    //       }
+    //       height={200}
+    //       width={200}
+    //       alt={`A cute animal!`}
+    //       unoptimized={true}
+    //       className="rounded-md w-full h-full object-cover"
+    //     />
 
-                                <p className='text-[18px]'>22 Juli 2024</p>
-                                <h3 className='text-[24px] font-bold mb-2'>EXPANSI SAPTALOKA FARMTECH KE WILAYAH ASIA TENGGARA</h3>
-                                <p className='text-[16px]'>KESUKSESAN SAPTALOKA FARMTECH MEMBUAT KEPUTUSAN BARU UNTUK EKSPANSI KE WILAYAH ASIA TENGGARA. TIDAK HANYA SATU, NAMUN EKSPANSI INI DILAKUKAN DI 3 NEGARA, MALAYSIA, SINGAPURA DAN THAILAND DENGAN MASING-MASING 2 HEADQUARTER.</p>
-                            </div>
-                            <a href="/about" className=''>
-                                <ButtonA text={"READ MORE"} color="#D2F2FF" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className='pb-40'>
-                    <h2 className='text-blue-light font-extrabold text-[30px] p-[4%]'>OTHER POST</h2>
-
-                    <div className='h-full w-full grid grid-cols-3 gap-10 px-[4%]'>
-                        <div className='h-[262px]'>
-
-                            <NewsCard
-                                title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
-                                date="04 JANUARY 2025"
-                                link="/news/#"
-                                image="/porto1.png"
-                            />
-                        </div>
-                        <div className='h-[262px]'>
-
-                            <NewsCard
-                                title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
-                                date="04 JANUARY 2025"
-                                link="/news/#"
-                                image="/porto1.png"
-                            />
-                        </div>
-                        <div className='h-[262px]'>
-
-                            <NewsCard
-                                title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
-                                date="04 JANUARY 2025"
-                                link="/news/#"
-                                image="/porto1.png"
-                            />
-                        </div>
-                        <div className='h-[262px]'>
-
-                            <NewsCard
-                                title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
-                                date="04 JANUARY 2025"
-                                link="/news/#"
-                                image="/porto1.png"
-                            />
-                        </div>
-                        <div className='h-[262px]'>
-
-                            <NewsCard
-                                title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
-                                date="04 JANUARY 2025"
-                                link="/news/#"
-                                image="/porto1.png"
-                            />
-                        </div>
-                        <div className='h-[262px]'>
-
-                            <NewsCard
-                                title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
-                                date="04 JANUARY 2025"
-                                link="/news/#"
-                                image="/porto1.png"
-                            />
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+    //     <p>
+    //       <a
+    //         className="text-xs text-blue-800"
+    //         href="https://giphy.com/gifs/dommespace-domme-space-programador-qgQUggAC3Pfv687qPC"
+    //       >
+    //         via GIPHY
+    //       </a>
+    //     </p>
+    //   </div>
+    // </div>
+    <>
+    <div className="w-full bg-primary">
+<LandingPort title={'INFORMATION AND NEWS'}/>
+<OtherPost/>
+    </div>
+    </>
+  );
 }
 
-export default Page
+export default Newpage;
