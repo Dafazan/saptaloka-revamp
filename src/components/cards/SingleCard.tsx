@@ -17,8 +17,9 @@ function Singlew({
 }) {
   const [ishover, setIshover] = useState(false);
   return (
-    <div
-     
+    <a
+    href={link}
+   
       className="w-full md:h-[400px] relative overflow-hidden"
     >
         <div className="flex">
@@ -47,14 +48,13 @@ function Singlew({
       >
         <div className="w-full h-full  flex flex-col justify-end transi">
           <a  href={link}
-      onMouseEnter={() => setIshover(true)}
-      onMouseLeave={() => setIshover(false)} className="flex justify-end">
+      className="flex justify-end">
             <ButtonA text={"READ MORE"} color="#F0FDFF" />
           </a>
         </div>
       </div>
         </div>
-    </div>
+    </a>
   );
 }
 

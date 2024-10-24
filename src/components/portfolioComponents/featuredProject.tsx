@@ -60,38 +60,16 @@ function FeaturedProject() {
 
                 <div className="md:flex grid grid-cols-1 w-full gap-10 px-[4%]">
 
-                    <PortofolioCard
-                        link="/portofolio/#"
-                        title="PT TELKOM INFRA SPARE MANAGEMENT"
-                        desc="An inventory application for regulating entry and exit of goods
-              and cables, also manages inventory in the warehouse at PT Telkom
-              Infra."
-                        image="/porto1.png"
-                    />
-                    <PortofolioCard
-                        link="/portofolio/#"
-                        title="PT TELKOM INFRA SPARE MANAGEMENT"
-                        desc="An inventory application for regulating entry and exit of goods
-              and cables, also manages inventory in the warehouse at PT Telkom
-              Infra."
-                        image="/porto1.png"
-                    />
-                    <PortofolioCard
-                        link="/portofolio/#"
-                        title="PT TELKOM INFRA SPARE MANAGEMENT"
-                        desc="An inventory application for regulating entry and exit of goods
-              and cables, also manages inventory in the warehouse at PT Telkom
-              Infra."
-                        image="/porto1.png"
-                    />
-                    <PortofolioCard
-                        link="/portofolio/#"
-                        title="PT TELKOM INFRA SPARE MANAGEMENT"
-                        desc="An inventory application for regulating entry and exit of goods
-              and cables, also manages inventory in the warehouse at PT Telkom
-              Infra."
-                        image="/porto1.png"
-                    />
+                {portfolios.map((data, i) => (
+                        <>
+                            <PortofolioCard
+                                link={`/portfolio/${data.id}`}
+                                title={data.title}
+                                desc={data.description}
+                                image={data.img}
+                            />
+                        </>
+                    ))}
 
                 </div>
             </div>
@@ -109,22 +87,7 @@ function FeaturedProject() {
                             />
                         </>
                     ))}
-                    <PortofolioCard
-                        link="/portofolio/#"
-                        title="PT TELKOM INFRA SPARE MANAGEMENT"
-                        desc="An inventory application for regulating entry and exit of goods
-              and cables, also manages inventory in the warehouse at PT Telkom
-              Infra."
-                        image="/porto1.png"
-                    />
-                    <PortofolioCard
-                        link="/portofolio/#"
-                        title="PT TELKOM INFRA SPARE MANAGEMENT"
-                        desc="An inventory application for regulating entry and exit of goods
-              and cables, also manages inventory in the warehouse at PT Telkom
-              Infra."
-                        image="/porto1.png"
-                    />
+                    
 
                 </div>
             </div>

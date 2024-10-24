@@ -16,12 +16,12 @@ function Price() {
        <PriceCard/>
 
        </div>
-       <div className="mt-10 w-full flex items-center justify-center">
+       <div className="mt-10 md:mx-0 px-5 text-center w-full flex items-center justify-center">
           <h3 className="md:text-[28px] mt-5 text-[18px] font-bold text-[#D8F3FF]">
           SOFTWARE MULTIPLATFORM PRICELIST
           </h3>
         </div>
-       <div className=" mb-5 w-full flex items-center justify-center">
+       <div className=" mb-5 w-full md:mx-0 px-5 text-center flex items-center justify-center">
           <h3 className="md:text-[16px] text-[10px] font-bold text-[#D8F3FF]">
           Pembuatan Software atau aplikasi multiplatform seperti ERP, E-Commerce, dll
           </h3>
@@ -34,7 +34,7 @@ function Price() {
 
 
         </div>
-<a href='https://wa.me/6283873296832' className='px-2 w-96 mb-5 py-2 border rounded-md shadow text-md font-bold mx-auto bg-[#2ABDFB] text-center '>Hubungi Admin</a>
+<a href='https://wa.me/6283873296832' className='px-2 w-96 mb-5 py-2 border rounded-md shadow text-md font-bold mx-auto bg-white md:bg-[#2ABDFB] text-center '>Hubungi Admin</a>
         </div>
       </div>
       <div className="w-full h-10 bg-[#2ABDFB] block md:hidden upsharp -translate-y-[2px]"></div>

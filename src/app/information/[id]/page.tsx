@@ -50,7 +50,7 @@ function Page({ params }: { params: any }) {
           
           <div className=" w-full mx-aut  md:pt-0 pt-20 flex flex-col justify-center ">
             <div className="md:w-[65%] w-full flex flex-col md:gap-10 gap-4">
-              <h1 className="md:text-5xl pt-56 text-xl font-semibold">
+              <h1 className="md:text-5xl md:pt-56 text-xl font-semibold">
                 {portfolioDetail.title}
               </h1>
               <div className="w-full ">
