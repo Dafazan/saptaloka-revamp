@@ -87,7 +87,7 @@ function Navbar() {
             <div>
               <a
                 className="hover:text-[#00ffff] duration-200 md:block hidden"
-                href="/newpage"
+                href="https://wa.me/6283873296832"
               >
                 CONTACT US
               </a>
@@ -263,7 +263,7 @@ function Navbar() {
                 ) : (
                   <></>
                 )}
-                <a className="hover:text-[#00FFFF] " href="/newpage">
+                <a className="hover:text-[#00FFFF] " href="https://wa.me/6283873296832">
                   CONTACT US
                 </a>
               </div>
@@ -282,7 +282,7 @@ function Navbar() {
                 ) : (
                   <></>
                 )}
-                <a className="hover:text-[#00FFFF] " href="/newpage">
+                <a className="hover:text-[#00FFFF] " href="/information">
                   INFORMATION AND NEWS
                 </a>
               </div>

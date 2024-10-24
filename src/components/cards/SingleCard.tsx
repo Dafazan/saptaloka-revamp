@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import ButtonA from "../button";
 
-function NewsCard({
+function Singlew({
   title,
   desc,
   link,
@@ -18,43 +18,44 @@ function NewsCard({
   const [ishover, setIshover] = useState(false);
   return (
     <a
-      href={link}
-      onMouseEnter={() => setIshover(true)}
-      onMouseLeave={() => setIshover(false)}
-      className="w-full h-[350px] relative overflow-hidden"
+    href={link}
+   
+      className="w-full md:h-[400px] relative overflow-hidden"
     >
-      <div className="w-full h-full absolute">
+        <div className="flex">
+
+      <div className="w-full h-full ">
         <img src={image} className="w-full h-full object-cover" alt="" />
       </div>
-      <div className="w-full h-full absolute bg-black opacity-30"></div>
+     
       <div
-        className={`absolute w-full h-full flex flex-col  p-4 transition-all duration-300 ${
+        className={` w-full h-full flex flex-col  p-4 transition-all duration-300 ${
           ishover == true ? "justify-start bg-[#2ABDFB]" : "justify-end"
         }`}
       >
-        <h1 className="text-[16px] text-[#F0FDFF] font-semibold">{date}</h1>
-        <h1 className="text-[22px] text-[#F0FDFF] font-bold">{title}</h1>
-        {ishover == true ? (
+        <h1 className="md:text-[16px] text-[10px] text-[#F0FDFF] font-semibold">{date}</h1>
+        <h1 className="md:text-[22px] text-[16px] text-[#F0FDFF] font-bold">{title}</h1>
+       
           <>
             <p className="pt-2 text-white text-[14px]">{desc}</p>
           </>
-        ) : (
-          <></>
-        )}
+       
       </div>
       <div
         className={`w-full h-full flex flex-col duration-300 ${
-          ishover == true ? "" : "-translate-x-[470px]"
+          ishover == true ? "" : ""
         } p-4 absolute `}
       >
         <div className="w-full h-full  flex flex-col justify-end transi">
-          <div className="flex justify-end">
+          <a  href={link}
+      className="flex justify-end">
             <ButtonA text={"READ MORE"} color="#F0FDFF" />
-          </div>
+          </a>
         </div>
       </div>
+        </div>
     </a>
   );
 }
 
-export default NewsCard;
+export default Singlew;

@@ -19,22 +19,25 @@ import {
     Firestore,
     serverTimestamp,
 } from "firebase/firestore";
+import NewsCard from '../cards/NewsCard';
+import SingleCard from '../cards/SingleCard';
 
 interface Portfolios {
     id: string;
     img: string;
     title: string;
     description: string;
+    date:any
     // Add more properties as needed
 }
-function FeaturedProject() {
+function OtherPost() {
     const [portfolios, setPortfolios] = useState<Portfolios[]>([]);
     useEffect(() => {
         getPortfolios();
     }, []);
     async function getPortfolios() {
         try {
-            const ordersRef = collection(db, "portfolio");
+            const ordersRef = collection(db, "blog");
             const q = query(ordersRef);
             const querySnapshot = await getDocs(q);
 
@@ -56,21 +59,20 @@ function FeaturedProject() {
     return (
         <>
             <div className=''>
-                <h2 className='text-blue-light font-extrabold text-[30px] p-[4%]'>FEATURED PROJECTS</h2>
+                <h2 className='text-blue-light font-extrabold text-[30px] p-[4%]'>RECENT POST</h2>
 
-                <div className="md:flex grid grid-cols-1 w-full gap-10 px-[4%]">
+                <div className=" grid grid-cols-1 w-full gap-10 px-[4%]">
+{portfolios.length > 0 && (
+  <SingleCard
+    link={`/information/${portfolios[0].id}`}
+    title={portfolios[0].title}
+    desc={portfolios[0].description}
+    image={portfolios[0].img}
+    date={portfolios[0].date}
+  />
+)}
 
-                {portfolios.map((data, i) => (
-                        <>
-                            <PortofolioCard
-                                link={`/portfolio/${data.id}`}
-                                title={data.title}
-                                desc={data.description}
-                                image={data.img}
-                            />
-                        </>
-                    ))}
-
+                   
                 </div>
             </div>
             <div className=''>
@@ -79,12 +81,12 @@ function FeaturedProject() {
                 <div className="grid-cols-1 grid md:grid-cols-4  w-full gap-10 px-[4%]">
                     {portfolios.map((data, i) => (
                         <>
-                            <PortofolioCard
-                                link={`/portfolio/${data.id}`}
-                                title={data.title}
-                                desc={data.description}
-                                image={data.img}
-                            />
+                            <NewsCard
+                          link={`/information/${data.id}`}
+                          title={data.title}
+                          desc={data.description}
+                          image={data.img} 
+                          date={data.date}                            />
                         </>
                     ))}
                     
@@ -95,4 +97,4 @@ function FeaturedProject() {
     )
 }
 
-export default FeaturedProject
+export default OtherPost
