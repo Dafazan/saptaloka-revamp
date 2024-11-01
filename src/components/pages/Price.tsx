@@ -34,7 +34,7 @@ function Price() {
 
 
         </div>
-<a href='https://wa.me/6283873296832' className='px-2 w-96 mb-5 py-2 border rounded-md shadow text-md font-bold mx-auto bg-white md:bg-[#2ABDFB] text-center '>Hubungi Admin</a>
+<a href='https://wa.me/6283873296832' className='px-2 md:w-96 w-10/12 mb-5 py-2 border rounded-md shadow text-md font-bold mx-auto bg-white md:bg-[#2ABDFB] text-center '>Hubungi Admin</a>
         </div>
       </div>
       <div className="w-full h-10 bg-[#2ABDFB] block md:hidden upsharp -translate-y-[2px]"></div>
