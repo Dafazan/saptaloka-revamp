@@ -14,8 +14,7 @@ function NewsPrev() {
               title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
               date="04 JANUARY 2025"
               link="/news/#"
-              image="/porto1.png"
-            />
+              image="/porto1.png" desc={""}            />
           </div>
           <div className="md:w-4/6 w-full h-full">
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-5 w-full h-full">
@@ -23,26 +22,22 @@ function NewsPrev() {
                 title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
                 date="04 JANUARY 2025"
                 link="/news/#"
-                image="/porto1.png"
-              />
+                image="/porto1.png" desc={""}              />
               <NewsCard
                 title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
                 date="04 JANUARY 2025"
                 link="/news/#"
-                image="/porto1.png"
-              />
+                image="/porto1.png" desc={""}              />
               <NewsCard
                 title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
                 date="04 JANUARY 2025"
                 link="/news/#"
-                image="/porto1.png"
-              />
+                image="/porto1.png" desc={""}              />
               <NewsCard
                 title="PERTEMUAN CEO SAPTALOKA DIGITAL DENGAN BILL GATES"
                 date="04 JANUARY 2025"
                 link="/news/#"
-                image="/porto1.png"
-              />
+                image="/porto1.png" desc={""}              />
             </div>
           </div>
         </div>
