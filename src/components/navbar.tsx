@@ -87,7 +87,7 @@ function Navbar() {
             <div>
               <a
                 className="hover:text-[#00ffff] duration-200 md:block hidden"
-                href="https://wa.me/6283873296832"
+                href="https://wa.me/62895339887714"
               >
                 CONTACT US
               </a>
