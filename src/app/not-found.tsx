@@ -12,16 +12,7 @@ function Newpage() {
         </p>
       </div>
       <div className="md:w-3/6 w-full p-[4%] flex md:justify-end justify-center">
-        <Image
-          src={
-            "#"
-          }
-          height={500}
-          width={500}
-          alt={`A cute animal!`}
-          unoptimized={true}
-          className="rounded-md h-full w-4/6 object-cover"
-        />
+        
 
         <p></p>
       </div>
