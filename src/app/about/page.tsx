@@ -326,75 +326,9 @@ export default function About() {
         </div>
       </div>
       <div className=" w-full relative overflow-hidden bg-[#000820] md:px-[62px] py-[75px]">
-        <div className="w-full justify-center">
-          <h1 className="text-center text-cyan-100 text-5xl font-extrabold">
-            MEET THE TEAM
-          </h1>
-        </div>
-        <div className="md:flex w-full justify-center items-center md:px-12 py-20">
-          <div className="flex md:w-6/12 justify-center items-center ">
-            <Founder
-              nama={"M. Nur Rizka Novanto, S.E"}
-              jabatan={"FOUNDER & CEO"}
-              foto={"/Rectangle 73.png"}
-              linked={undefined}
-              ig={undefined}
-              web={undefined}
-            />
-          </div>
-          <div className="flex md:w-6/12 justify-center items-center pt-6">
-            <Founder
-              nama={"Fikri Zaki Aditama, S.Si"}
-              jabatan={"FOUNDER & HEAD OF IT"}
-              foto={"/fza.png"}
-              linked={undefined}
-              ig={undefined}
-              web={undefined}
-            />
-          </div>
-        </div>
-        <div className="grid md:grid-cols-3 w-full pt-16 gap-5">
-          <Team
-            nama={"Acep Wahyu Kurna"}
-            jabatan={"Back-end Developer"}
-            foto={"/awk.png"}
-            linked={undefined}
-            ig={undefined}
-            web={undefined}
-          />
-          <Team
-            nama={"Tio Noviar"}
-            jabatan={"Front-end Developer"}
-            foto={"/Rectangle 77.png"}
-            linked={undefined}
-            ig={undefined}
-            web={undefined}
-          />
-          <Team
-            nama={"Daffa Fauzan"}
-            jabatan={"UI/UX Designer"}
-            foto={"/mdf.png"}
-            linked={undefined}
-            ig={undefined}
-            web={undefined}
-          />
-          <Team
-            nama={"Luthfi Khaeri Ikhsan"}
-            jabatan={"Back-end Developer"}
-            foto={"/Rectangle 79.png"}
-            linked={undefined}
-            ig={undefined}
-            web={undefined}
-          />
-          <Team
-            nama={"M. Aulia Rahman, S.Kom"}
-            jabatan={"Front-end Developer"}
-            foto={"/Rectangle 80.png"}
-            linked={undefined}
-            ig={undefined}
-            web={undefined}
-          />
-        </div>
+        
+        
+       
       </div>
     </main>
   );
