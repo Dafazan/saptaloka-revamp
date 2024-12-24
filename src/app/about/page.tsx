@@ -355,7 +355,7 @@ export default function About() {
         </div>
         <div className="grid md:grid-cols-3 w-full pt-16 gap-5">
           <Team
-            nama={"Acép Wahyu Kurna"}
+            nama={"Acep Wahyu Kurna"}
             jabatan={"Back-end Developer"}
             foto={"/awk.png"}
             linked={undefined}
@@ -363,7 +363,7 @@ export default function About() {
             web={undefined}
           />
           <Team
-            nama={"Taryo Noviar.zip"}
+            nama={"Tio Noviar"}
             jabatan={"Front-end Developer"}
             foto={"/Rectangle 77.png"}
             linked={undefined}
